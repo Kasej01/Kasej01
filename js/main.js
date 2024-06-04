@@ -2,24 +2,37 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/projects.json')
         .then(response => response.json())
         .then(data => {
-            displayProjects(data);
+            data.forEach(project => {
+                fetchProjectData(project);
+            });
         });
 });
 
-function displayProjects(projects) {
+function fetchProjectData(project) {
+    fetch(`https://api.github.com/repos/${project.owner}/${project.repo}`)
+        .then(response => response.json())
+        .then(repoData => {
+            displayProject({
+                title: repoData.name,
+                description: repoData.description,
+                image: project.image,
+                link: repoData.html_url
+            });
+        });
+}
+
+function displayProject(project) {
     const recentProjectsContainer = document.getElementById('projects-container');
     const allProjectsList = document.getElementById('projects-list');
 
-    if (recentProjectsContainer) {
-        projects.slice(0, 3).forEach(project => {
-            recentProjectsContainer.appendChild(createProjectElement(project));
-        });
+    const projectElement = createProjectElement(project);
+
+    if (recentProjectsContainer && recentProjectsContainer.children.length < 4) {
+        recentProjectsContainer.appendChild(projectElement);
     }
 
     if (allProjectsList) {
-        projects.forEach(project => {
-            allProjectsList.appendChild(createProjectElement(project));
-        });
+        allProjectsList.appendChild(projectElement);
     }
 }
 
@@ -45,6 +58,12 @@ function createProjectElement(project) {
     projectLink.textContent = 'View Project';
     projectLink.target = '_blank';
     projectDiv.appendChild(projectLink);
+
+    const projDownloadLink = document.createElement('a');
+    projDownloadLink.href = project.link;
+    projDownloadLink.textContent = 'View Project';
+    projDownloadLink.target = '_blank';
+    projectDiv.appendChild(projDownloadLink);
 
     return projectDiv;
 }

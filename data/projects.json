@@ -1,26 +1,26 @@
 [
     {
-        "title": "Project 1",
-        "description": "Description of project 1.",
-        "image": "images/project1.jpg",
+        "owner": "kasej01",
+        "repo": "TeePeeRequests",
+        "image": "images/TeePeeRequests.jpg",
         "link": "https://link-to-project1.com"
     },
     {
-        "title": "Project 2",
-        "description": "Description of project 2.",
-        "image": "images/project2.jpg",
+        "owner": "kasej01",
+        "repo": "RolePlayers",
+        "image": "images/RolePlayers.jpg",
         "link": "https://link-to-project2.com"
     },
     {
-        "title": "Project 3",
-        "description": "Description of project 3.",
-        "image": "images/project3.jpg",
+        "owner": "kasej01",
+        "repo": "HeadStash",
+        "image": "images/HeadStash.jpg",
         "link": "https://link-to-project3.com"
     },
     {
-        "title": "Project 4",
-        "description": "Description of project 4.",
-        "image": "images/project4.jpg",
+        "owner": "kasej01",
+        "repo": "EzHomes",
+        "image": "images/EzHomes.jpg",
         "link": "https://link-to-project4.com"
     }
 ]
