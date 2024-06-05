@@ -16,6 +16,10 @@ header {
     text-align: center;
 }
 
+main{
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -40,11 +44,39 @@ h2 {
     color: #333;
 }
 
+/* Home Section */
+
+#home-about-me p{
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+#home-about-me a {
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Projects section */
 #projects-container, #projects-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     justify-items: center;
+}
+
+#all-projects{
+    text-align: center;
+}
+
+#all-projects p{
+    font-size: 1.2rem;
 }
 
 .project {
@@ -83,6 +115,7 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+    margin: 5px;
 }
 
 footer {

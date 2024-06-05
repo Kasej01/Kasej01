@@ -55,13 +55,13 @@ function createProjectElement(project) {
 
     const projectLink = document.createElement('a');
     projectLink.href = project.link;
-    projectLink.textContent = 'View Project';
+    projectLink.textContent = 'View on Github';
     projectLink.target = '_blank';
     projectDiv.appendChild(projectLink);
 
     const projDownloadLink = document.createElement('a');
     projDownloadLink.href = project.link;
-    projDownloadLink.textContent = 'View Project';
+    projDownloadLink.textContent = 'Download';
     projDownloadLink.target = '_blank';
     projectDiv.appendChild(projDownloadLink);
 
