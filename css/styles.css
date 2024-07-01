@@ -52,8 +52,17 @@ h2 {
     padding: 1rem;
     margin-bottom: 0;
 }
-
 #home-about-me a {
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#all-projects-btn {
     display: inline-block;
     font-weight: 700;
     padding: 0.5rem 0.5rem;
@@ -75,7 +84,7 @@ h2 {
     text-align: center;
 }
 
-#all-projects p{
+.all-projects-p{
     font-size: 1.2rem;
 }
 
@@ -125,3 +134,38 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+
+/* About me */
+#about{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.about-intro{
+    font-size: 1.5rem;
+}
+.about-p{
+    padding: .3rem;
+    font-size: 1.3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* About me */
+    #about{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .about-intro{
+        font-size: 1.2rem;
+    }
+    .about-p{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .navitem{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+    }
+  }
