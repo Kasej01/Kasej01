@@ -1,26 +1,32 @@
 [
     {
         "owner": "kasej01",
+        "repo": "DogSafeSnacks",
+        "image": "images/DogSafeSnacks.png",
+        "link": "https://www.dogsafesnacks.com"
+    },
+    {
+        "owner": "kasej01",
         "repo": "TeePeeRequests",
         "image": "images/TeePeeRequests.jpg",
-        "link": "https://link-to-project1.com"
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/teepeerequests"
     },
     {
         "owner": "kasej01",
         "repo": "RolePlayers",
         "image": "images/RolePlayers.jpg",
-        "link": "https://link-to-project2.com"
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/roleplayers"
     },
     {
         "owner": "kasej01",
         "repo": "HeadStash",
         "image": "images/HeadStash.jpg",
-        "link": "https://link-to-project3.com"
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/headstash"
     },
     {
         "owner": "kasej01",
         "repo": "EzHomes",
         "image": "images/EzHomes.jpg",
-        "link": "https://link-to-project4.com"
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/ezhomes"
     }
 ]
