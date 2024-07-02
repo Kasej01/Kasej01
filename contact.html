@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kase Johnson</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="index.html">Home</a></li>
+                <li class="navitem"><a href="projects.html">Projects</a></li>
+                <li class="navitem"><a href="about.html">About Me</a></li>
+                <li class="navitem"><a href="resume.pdf">Resume</a></li>
+                <li class="navitem"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <h1>Contact Me</h1>
+        <p>I'd love to hear from you! Whether you have a question about my projects, want to collaborate, or just want to say hi, feel free to drop me a message.</p>
+        
+        <form id="contact-form" action="https://formspree.io/f/mdknogen" method="POST">
+            <div class="input-container">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message</label>
+                <div class="bar"></div>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

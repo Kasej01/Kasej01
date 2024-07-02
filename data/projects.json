@@ -2,31 +2,37 @@
     {
         "owner": "kasej01",
         "repo": "DogSafeSnacks",
-        "image": "images/DogSafeSnacks.png",
+        "image": "assets/images/DogSafeSnacks.png",
         "link": "https://www.dogsafesnacks.com"
     },
     {
         "owner": "kasej01",
         "repo": "TeePeeRequests",
-        "image": "images/TeePeeRequests.jpg",
+        "image": "assets/images/TeePeeRequests.jpg",
         "link": "https://www.curseforge.com/minecraft/bukkit-plugins/teepeerequests"
     },
     {
         "owner": "kasej01",
         "repo": "RolePlayers",
-        "image": "images/RolePlayers.jpg",
+        "image": "assets/images/RolePlayers.jpg",
         "link": "https://www.curseforge.com/minecraft/bukkit-plugins/roleplayers"
     },
     {
         "owner": "kasej01",
         "repo": "HeadStash",
-        "image": "images/HeadStash.jpg",
+        "image": "assets/images/HeadStash.jpg",
         "link": "https://www.curseforge.com/minecraft/bukkit-plugins/headstash"
     },
     {
         "owner": "kasej01",
         "repo": "EzHomes",
-        "image": "images/EzHomes.jpg",
+        "image": "assets/images/EzHomes.jpg",
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/ezhomes"
+    },
+    {
+        "owner": "kasej01",
+        "repo": "KaseJ01",
+        "image": "assets/images/ProfessionalPicture.jpg",
         "link": "https://www.curseforge.com/minecraft/bukkit-plugins/ezhomes"
     }
 ]
