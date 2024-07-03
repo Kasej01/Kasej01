@@ -1,25 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('data/projects.json')
+    fetch('https://api.github.com/users/Kasej01/repos?sort=created&direction=desc')
         .then(response => response.json())
-        .then(data => {
-            data.forEach(project => {
-                fetchProjectData(project);
+        .then(repos => {
+            repos.slice(0, 4).forEach(repo => {
+                displayProject({
+                    title: repo.name,
+                    description: repo.description,
+                    image: `assets/images/${repo.name}.png`,
+                    link: repo.html_url
+                });
             });
         });
 });
-
-function fetchProjectData(project) {
-    fetch(`https://api.github.com/repos/${project.owner}/${project.repo}`)
-        .then(response => response.json())
-        .then(repoData => {
-            displayProject({
-                title: repoData.name,
-                description: repoData.description,
-                image: project.image,
-                link: repoData.html_url
-            });
-        });
-}
 
 function displayProject(project) {
     const recentProjectsContainer = document.getElementById('projects-container');
@@ -41,7 +33,7 @@ function createProjectElement(project) {
     projectDiv.className = 'project';
 
     const projectImage = document.createElement('img');
-    projectImage.src = project.image;
+    projectImage.src = project.image || 'default-image-url.jpg';
     projectImage.alt = project.title;
     projectDiv.appendChild(projectImage);
 
@@ -68,23 +60,22 @@ function createProjectElement(project) {
     return projectDiv;
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const skills = [
         { name: "Java", confidence: 50, proof: "https://github.com/Kasej01/RolePlayers" },
         { name: "Python", confidence: 60, proof: "projects/python-project.html" },
         { name: "Assembly", confidence: 35 },
-        { name: "C", confidence: 65},
+        { name: "C", confidence: 65 },
         { name: "C#", confidence: 65 },
-        { name: "C++", confidence: 50},
-        { name: "React", confidence: 60, proof: "https://www.dogsafesnacks.com"},
+        { name: "C++", confidence: 50 },
+        { name: "React", confidence: 60, proof: "https://www.dogsafesnacks.com" },
         { name: "Node", confidence: 50 },
-        { name: "Cloud Concepts", confidence: 60, proof: "assets\\AWS Certified Cloud Practitioner certificate.pdf"},
-        { name: "Database Management", confidence: 70},
-        { name: "Version Control (Git)", confidence: 60, proof: "https://github.com/Kasej01"},
-        { name: "Networking and Security", confidence: 50},
-        { name: "IAM Permissions", confidence: 60},
-        { name: "Cloud Concepts", confidence: 60, proof: "assets\\AWS Certified Cloud Practitioner certificate.pdf"}
+        { name: "Cloud Concepts", confidence: 60, proof: "assets/AWS Certified Cloud Practitioner certificate.pdf" },
+        { name: "Database Management", confidence: 70 },
+        { name: "Version Control (Git)", confidence: 60, proof: "https://github.com/Kasej01" },
+        { name: "Networking and Security", confidence: 50 },
+        { name: "IAM Permissions", confidence: 60 },
+        { name: "Cloud Concepts", confidence: 60, proof: "assets/AWS Certified Cloud Practitioner certificate.pdf" }
     ];
 
     const skillsContainer = document.getElementById("skills-container");
