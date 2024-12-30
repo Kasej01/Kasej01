@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://api.github.com/users/Kasej01/repos?sort=created&direction=desc')
+    fetch('https://api.github.com/users/Kasej01/repos?sort=updated&direction=desc')
         .then(response => response.json())
         .then(repos => {
             repos.slice(0, 10).forEach(repo => {
