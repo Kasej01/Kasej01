@@ -41,21 +41,10 @@ h2 {
     color: #333;
 }
 
-/* Home Section */
-#home-about-me p {
-    font-size: 1.3rem;
-    line-height: 1.75rem;
-    padding: 1rem;
-    margin-bottom: 0;
-}
-#home-about-me a {
-    display: inline-block;
-    font-weight: 700;
-    padding: 0.5rem 0.5rem;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
+/* Projects section */
+#recent-projects{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
 #all-projects-btn {
@@ -68,20 +57,11 @@ h2 {
     margin: 5px;
 }
 
-/* Projects section */
 #projects-container, #projects-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     justify-items: center;
-}
-
-#all-projects {
-    text-align: center;
-}
-
-.all-projects-p {
-    font-size: 1.2rem;
 }
 
 .project {
@@ -124,6 +104,7 @@ h2 {
     margin: 5px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -132,20 +113,11 @@ footer {
     margin-top: auto;
 }
 
-/* About me */
-#about {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.about-intro {
-    font-size: 1.5rem;
-}
-.about-p {
-    padding: .3rem;
-    font-size: 1.3rem;
-}
-
 /* Skills */
+#skills{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
 .skill-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -353,18 +325,6 @@ input:focus ~ .bar, textarea:focus ~ .bar {
 }
 
 @media only screen and (max-width: 600px) {
-    /* About me */
-    #about {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .about-intro {
-        font-size: 1.2rem;
-    }
-    .about-p {
-        padding: .5rem;
-        font-size: 1rem;
-    }
     .navitem {
         display: flex;
         flex-direction: column;
