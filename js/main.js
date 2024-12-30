@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.github.com/users/Kasej01/repos?sort=created&direction=desc')
         .then(response => response.json())
         .then(repos => {
-            repos.slice(0, 4).forEach(repo => {
+            repos.slice(0, 10).forEach(repo => {
                 displayProject({
                     title: repo.name,
                     description: repo.description,
